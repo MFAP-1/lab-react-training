@@ -3,7 +3,7 @@ import Rating from './Rating';
 function DriverCard(props) {
   return (
     <div className="driver-card">
-      <div>
+      <div className="padding-right-15px">
         <img src={props.img} alt={props.name} className="driver-card-img" />
       </div>
       <div>

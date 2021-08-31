@@ -1,7 +1,11 @@
 function IdCard(props) {
   return (
     <div className="box">
-      <img src={props.picture} alt={props.firstName} />
+      <img
+        src={props.picture}
+        alt={props.firstName}
+        className="padding-right-15px"
+      />
       <div>
         <p>
           <b>First name: </b>

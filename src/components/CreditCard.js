@@ -26,16 +26,12 @@ function CreditCard(props) {
       <div>
         <img className="cardImg" src={cardType} alt={props.type} />
       </div>
-      <div className="biggerText">
-        oooo oooo oooo
-        {props.number.substr(12)}
-      </div>
+      <div className="biggerText">•••• •••• •••• {props.number.substr(12)}</div>
       <div className="smallerText">
         <span>
           Expires {formatedMonth}/{props.expirationYear.toString().substr(2)}
         </span>
-        {'         '}
-        <span> {props.bank}</span>
+        {props.bank}
       </div>
       <div className="smallerText">{props.owner}</div>
     </div>

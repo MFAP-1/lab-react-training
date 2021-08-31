@@ -12,16 +12,31 @@
   margin: 10px;
 }
 
+.padding-right-15px {
+  padding-right: 15px;
+}
+
+/* box color */
+.box-color {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  text-align: center;
+  margin: 10px;
+  padding: 15px 0;
+}
+
 /* credit Card compoment */
 #credit-card-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
 }
 
 .credit-card {
   border: 0px solid black;
   border-radius: 10px;
-  padding: 15px;
+  padding: 20px;
+  margin: 0 15px;
   width: 25%;
 }
 
@@ -32,14 +47,18 @@
 }
 
 .biggerText {
-  font-size: 1.3rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.5rem;
+  /* display: block; */
+  text-align: center;
+  margin: 15px 0;
 }
 
 .smallerText {
   font-size: 0.8rem;
+}
+
+.smallerText span {
+  margin-right: 20px;
 }
 
 /* Driver Card Component */
@@ -49,7 +68,7 @@
   align-items: center;
   justify-content: center;
   background-color: #425cbb;
-  width: 95%;
+  width: 95vw;
   margin: 20px;
   border-radius: 10px;
   color: white;
@@ -60,6 +79,7 @@
 .driver-card-img {
   height: 80px;
   width: 80px;
+  object-fit: cover;
   border-radius: 50%;
 }
 

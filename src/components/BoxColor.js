@@ -5,23 +5,19 @@ function BoxColor(props) {
   }
   return (
     <div
-      className="box"
+      className="box-color"
       style={{
         backgroundColor: `rgb(${props.r},${props.g},${props.b})`,
-        flexDirection: 'column',
-        textAlign: 'center',
-        padding: 'none',
       }}
-      // style={{ backgroundColor: `rgb(255,0,0)` }}
     >
-      <p>
+      <span>
         rgb({props.r},{props.g},{props.b})
-      </p>
-      <p>
+      </span>
+      <span>
         #{componentToHex(props.r)}
         {componentToHex(props.g)}
         {componentToHex(props.b)}
-      </p>
+      </span>
     </div>
   );
 }
