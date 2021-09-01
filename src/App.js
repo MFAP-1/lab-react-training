@@ -8,6 +8,11 @@ import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
 import DriverCard from './components/DriverCard';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Dice from './components/Dice';
+import Carousel from './components/Carousel';
+import NumbersTable from './components/NumbersTable';
 
 function App() {
   return (
@@ -22,7 +27,6 @@ function App() {
         birth={new Date('1992-07-14')}
         picture="https://randomuser.me/api/portraits/men/44.jpg"
       />
-
       <IdCard
         lastName="Delores "
         firstName="Obrien"
@@ -31,22 +35,18 @@ function App() {
         birth={new Date('1988-05-11')}
         picture="https://randomuser.me/api/portraits/women/44.jpg"
       />
-
       {/* Iteration 2: */}
       <h1>Greetings:</h1>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-
       {/* Iteration 3: */}
       <h1>Random:</h1>
       <RandomNumber min={1} max={6} />
       <RandomNumber min={1} max={100} />
-
       {/* Iteration 4: */}
       <h1>BoxColor:</h1>
       <BoxColor r={255} g={0} b={0} />
       <BoxColor r={128} g={255} b={0} />
-
       {/* Iteration 5: */}
       <h1>CreditCard:</h1>
       <div id="credit-card-list">
@@ -81,7 +81,6 @@ function App() {
           color="white"
         />
       </div>
-
       {/* Iteration 6: */}
       <h1>Rating:</h1>
       <Rating>0</Rating>
@@ -90,7 +89,6 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
-
       {/* Iteration 7: */}
       <h1>DriverCard:</h1>
       <DriverCard
@@ -111,6 +109,31 @@ function App() {
           licensePlate: 'BE33ER',
         }}
       />
+      {/* Iteration 8: */}
+      <h1>LikeButton:</h1>
+      <LikeButton /> <LikeButton />
+      {/* Iteration 9: */}
+      <h1>ClickablePicture:</h1>
+      <ClickablePicture
+        img="/img/persons/maxence.png"
+        imgClicked="/img/persons/maxence-glasses.png"
+      />
+      {/* iterarion 10: */}
+      <h1>Dice:</h1>
+      <Dice />
+      {/* iterarion 11: */}
+      <h1>Carousel:</h1>
+      <Carousel
+        imgs={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg',
+        ]}
+      />
+      {/* iterarion 12: */}
+      <h1>NumbersTable:</h1>
+      <NumbersTable limit={12} />
     </div>
   );
 }

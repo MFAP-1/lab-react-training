@@ -79,10 +79,61 @@
 .driver-card-img {
   height: 80px;
   width: 80px;
-  object-fit: cover;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .driver-name {
   font-size: 1.8rem;
+}
+
+/* Like Button */
+
+.like-button {
+  padding: 10px 25px;
+  font-size: 2rem;
+  color: white;
+}
+
+/* Clickable picture  */
+
+.clickable-picture-img {
+  width: 200px;
+}
+
+/* Dice */
+
+.dice-img {
+  width: 100px;
+}
+
+/* NumbersTable */
+#numbers-table {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.even-number {
+  background-color: red;
+  border: 2px solid black;
+  border-width: thin;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.odd-number {
+  background-color: white;
+  border: 2px solid black;
+  border-width: thin;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
