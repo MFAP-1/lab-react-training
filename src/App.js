@@ -14,6 +14,7 @@ import Dice from './components/Dice';
 import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
+import SignupPage from './components/SignupPage';
 
 function App() {
   return (
@@ -138,6 +139,9 @@ function App() {
       {/* Iterarion 13 e 14: */}
       <h1>FaceBook:</h1>
       <FaceBook />
+      {/* Iterarion 15: */}
+      <h1>SignupPage:</h1>
+      <SignupPage />
     </div>
   );
 }
