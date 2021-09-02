@@ -137,3 +137,14 @@
   justify-content: center;
   align-items: center;
 }
+
+/* FaceBook */
+.profile-pictures {
+  width: 150px;
+  object-fit: cover;
+}
+
+/* FaceBook extra */
+.highlighted-element {
+  background-color: #a3d2e2;
+}
