@@ -15,6 +15,7 @@ import Carousel from './components/Carousel';
 import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
 import SignupPage from './components/SignupPage';
+import RGBColorPicker from './components/rbgColorPicker/RGBColorPicker';
 
 function App() {
   return (
@@ -142,6 +143,9 @@ function App() {
       {/* Iterarion 15: */}
       <h1>SignupPage:</h1>
       <SignupPage />
+      {/* Iterarion 16: */}
+      <h1>RGB Color Picker:</h1>
+      <RGBColorPicker />
     </div>
   );
 }
